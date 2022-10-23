@@ -38,6 +38,8 @@ function toggleDesktopMenu(){
         darken.classList.remove('inactive');
     else
         darken.classList.add('inactive');
+    
+    openProductDetailContainer.classList.add('inactive');
 }
 
 function toggleMobileMenu(){
