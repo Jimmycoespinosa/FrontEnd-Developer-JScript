@@ -14,17 +14,29 @@
 body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    height: 100%;
 }
 .inactive{
     display: none;
 }
+.darken
+{
+  width: 100%;
+  height: calc(100%);
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 /* ESTILOS NAVBAR */
 nav{
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 0 24px;
     border-bottom: 1px solid var(--very-ligth-pink);
+    background-color: var(--white);
+    z-index: 1;
 }
 nav img{
     cursor: pointer;
@@ -174,7 +186,7 @@ aside{
 
 /* CARRITO DE COMPRAS */
 #shoppingCartContainer{
-    padding: 0 24px;
+    padding: 24px 24px;
 }
 .title-container{
     display: flex;
@@ -254,20 +266,32 @@ aside{
     width: 14px;
     height: 14px;
     position: absolute;
-    top: 24px;
-    left: 24px;
+    top: 30px;
+    left: 30px;
     z-index: 2;
-    padding: 12px;
+    padding: 8px;
     border-radius: 50%;
 }
 .product-detail-close:hover{
     cursor: pointer;
 }
+#productDetail {
+    width: calc(100% - 48px);
+    padding-bottom: 24px;
+    position: fixed;
+    right: 0;
+    padding: 24px;
+    top: 120px;
+    right: 50%;
+    transform: translate(50%, 0);
+    background-color: var(--white);
+    border-radius: 10px;
+  }
 #productDetail > img:nth-child(2){
     width: 100%;
     height: 360px;
     object-fit: cover;
-    border-radius: 0 0 20px 20px;
+    border-radius: 18px 18px 18px 18px;
 }
 #productDetail .product-info{
     margin: 24px 24px 0 24px;
