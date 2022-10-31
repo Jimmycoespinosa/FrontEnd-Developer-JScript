@@ -6,6 +6,11 @@
 // Colapse Bloques: CTRL+K seguido CTLS+0
 // Despliega Bloques: CTRL+K seguido CTRL+J
 
+// Requiere la instalación del componente gh-pages (Ayuda con el despliegue de la app final en git).
+// Comando: npm install gh-pages --save-dev
+// Cambios en *.json:  Agrega script "deploy": "gh-page -d ./".
+// Comando de despliegue: npm run deploy
+
 const menuEmail = document.querySelector('.navbar-email');
 const desktopMenu = document.querySelector('.desktop-menu');
 const menuHamIcon = document.querySelector('.menu');
